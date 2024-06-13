@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'signup.css' %}">
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            p{
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+
+    <body>
+        <video autoplay loop muted plays-inline class="myVideo">
+            <source src="static/signupearth.mp4" type="video/mp4">
+        </video>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="wrapper">
+                <p class="Create">Create New Account</p>
+                <form action="/Signup" method="post">
+                {% csrf_token %}
+                <div class="a">
+                    <!-- <label for="name">First Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="name">Last Name</label><br> -->
+                    <input type="text" id="fname" name="fname" placeholder=" First Name" required>&nbsp;<input type="text" id="lname" name="lname" placeholder=" Last Name"required>
+                    <br><br>
+                </div>
+                <div class="b">
+                    <!-- <label for="name">Username</label><br> -->
+                    <input type="text" id="Username" name="username" placeholder=" Username"required>
+                    <br><br>
+                    <!-- <label for="email">Email</label><br> -->
+                    <input type="text" id="email" name="email" placeholder=" Email Address"required>
+                    <br><br>
+                    <!-- <label for="Password">Password</label><br> -->
+                    <input type="password" id="pwd1" name="pwd1" placeholder=" Password"required>
+                    <br><br>
+                    <!-- <label for="Password">Confirm Password</label><br> -->
+                    <input type="password" id="pwd2" name="pwd2" placeholder=" Re-enter the Password"required>
+                    <br><br>
+                    <button type="submit">Login</button>
+                    <p>Already have account?<a href="Signin" >Login</a></p>
+                </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
+

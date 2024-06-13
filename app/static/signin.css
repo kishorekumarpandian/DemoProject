@@ -1,0 +1,53 @@
+body{
+    padding: 280px 1000px; 
+}
+.myVideo2{
+    position: fixed;
+    right:0;
+    bottom: -70px;
+    width: 120%;
+    height: 125%;
+}
+body .signin{
+    width: 350px;
+    border-radius: 20px;
+    background: transparent;
+    border: .5px solid;
+    backdrop-filter: blur(8px);
+}
+.signin .Login{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color:rgb(130, 133, 119);
+}
+.signin input{
+    font-size: 20px;
+    font-family: serif;
+    color: white;
+    width: 350px;
+    height: 35px;
+    padding: auto;
+    border: .5px solid white ;
+    border-radius: 10px;
+    background: transparent;
+}
+.signin button{
+    border-radius: 40px;
+    background-color:rgb(139, 173, 201) ;
+    font-family: serif bold;
+    display: block;
+    color: white;
+    width: 350px;
+    height: 40px;
+}
+.signin button:hover{
+    background-color:rgb(14, 26, 41);
+}
+.register{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+

@@ -1,0 +1,27 @@
+body{
+    padding: 300px 610px; 
+} 
+.myVideo1{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+    height: 100%;
+  }
+.indexpage{
+    width: 308px;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid;
+    backdrop-filter: blur(10px);
+}
+.indexpage button{
+    border-radius: 20px;
+    background-color:rgb(223, 18, 18) ;
+    font-family: serif bold;
+    display: block;
+    color: white;
+    width: 305px;
+    height: 40px;
+}
